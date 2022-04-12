@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9b2335;
+}
+
+/* jumbotron */
+.jumbotron {
+  font-family: "Montserrat", sans-serif;
+  padding: 10rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ybGR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60)
+      center center;
+  background-size: cover;
+  text-align: center;
+  color: rgb(212, 209, 209);
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron h1 {
+  color: rgb(212, 209, 209);
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+.jumbotron p {
+  font-family: serif;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 0 30px;
+}
+
+/* search area */
+
+/* cards */
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: black;
+  background-color: #6184a8;
+  font-weight: bold;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding-right: 2rem;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: white;
+  /* overflow-y: scroll; */
+  transition: 0.8s ease;
+}
+
+.card-desc ul {
+  list-style-type: none;
+}
+
+.card-desc ul li {
+  color: #366d45;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+/* search */
+.countries {
+  padding: 0;
+  list-style-type: none;
+  width: 480px;
+}
+
+.country-item {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  margin: 10px 0;
+}
+
+.country-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.country-flag {
+  width: 40px;
+}
+
+.country-name {
+  flex: 2;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.country-info {
+  border-left: 1px solid #aaa;
+  color: #777;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.country-population {
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.country-population-text {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 480px;
+}
+
+/* pagination */
+/*Pagination CSS*/
+#page_navigation {
+  clear: both;
+  margin: 20px 0;
+}
+#page_navigation a {
+  padding: 3px 6px;
+  border: 1px solid #2e6da4;
+  margin: 2px;
+  color: black;
+  text-decoration: none;
+}
+.active_page {
+  background: #337ab7;
+  color: white !important;
+}
+.physicianList ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.physicianList ul li {
+  display: inline-block;
+  width: 240px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
